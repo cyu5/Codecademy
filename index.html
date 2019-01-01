@@ -8,47 +8,56 @@
   </head>
   <body>
 
-    <!-- navbar -->
-    <header class="desktop-navbar">
-        <figure class="logo">
-          <img src="images/ic-logo.svg" alt="">
-          <figcaption>Colmar<span>Academy</span></figcaption>
-        </figure>
-        <nav role="presentation">
+    <!-- header, landing page -->
+    <header class="header">
+
+      <!-- main navbar -->
+      <nav>
+
+        <!-- desktop navbar -->
+        <div class="container desktop desktop-navbar">
+          <figure class="logo">
+            <img src="images/ic-logo.svg" alt="logo" width="100%">
+            <figcaption>Colmar<span>Academy</span></figcaption>
+          </figure>
           <ul>
-            <li>On Campus</li>
-            <li>Online</li>
-            <li>For Campanies</li>
-            <li>Sign In</li>
+            <li><a href="#">On Campus</a></li>
+            <li><a href="#">Online</a></li>
+            <li><a href="#">For Campanies</a></li>
+            <li><a href="#">Sign In</a></li>
           </ul>
-        </nav>
+        </div>
+        
+        <!-- mobile navbar -->
+        <div class="container mobile mobile-navbar">
+          <a href="#"><img class="mobile-icon" src="images/ic-logo.svg" alt="logo"></a>
+          <a href="#"><img class="mobile-icon" src="images/ic-on-campus.svg" alt="on campus"></a>
+          <a href="#"><img class="mobile-icon" src="images/ic-online.svg" alt="online"></a>
+          <a href="#"><img class="mobile-icon" src="images/ic-login.svg" alt="login"></a>
+        </div>
+      </nav>
+        
+      <!-- main-banner -->
+      <section class="main-banner">
+        <figure class="large-image-frame container">
+          <img src="./images/banner.jpg" alt="banner">
+        </figure>
+        
+        <div class="text-content container">
+          <h1>Learn something new everyday</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="button">Start here</div>
+        </div>
+      </section>
 
     </header>
-    <header role="presentation" class="mobile-navbar">
-        <img class="mobile-icon" src="images/ic-logo.svg" alt="logo">
-        <img class="mobile-icon" src="images/ic-on-campus.svg" alt="on campus">
-        <img class="mobile-icon" src="images/ic-online.svg" alt="online">
-        <img class="mobile-icon" src="images/ic-login.svg" alt="login">
-    </header>
-
-
-    <!-- main-banner -->
-    <section class="main-banner">
-      <figure class="large-image-frame container">
-        <img src="./images/banner.jpg" alt="">
-      </figure>
-
-      <div class="text-content container">
-        <h1>Learn something new everyday</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="button">Start here</div>
-      </div>
-    </section>
 
 
     <!-- business info -->
     <section class="info">
-      <figure class="large-image-frame">
+
+      <!-- headline info -->
+      <figure class="large-image-frame container">
         <img src="./images/information-main.jpg" alt="">
         <h2>It doesn't hurt to keep practicing</h2>
         <p>
@@ -57,6 +66,8 @@
         </p>
         <span>Emanual. Sr Strategist at Hiring.com</span>
       </figure>
+
+      <!-- list of infos -->
       <div class="list-items">
         <div class="item">
           <figure class="small-image-frame">
